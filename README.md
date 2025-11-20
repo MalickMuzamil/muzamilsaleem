@@ -1,70 +1,121 @@
-# 📁 Muzamil's Portfolio Projects
+<h1 align="center">🌐 Personal Portfolio — Next.js</h1>
+<h3 align="center">Modern • Animated • Responsive • Fast</h3>
 
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![Tech](https://img.shields.io/badge/Full--Stack-MERN-blueviolet?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-Next.js-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/UI-Framer%20Motion-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Responsive-YES-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Static%20Site-Optimized-yellow?style=for-the-badge" />
+</p>
 
 ---
 
-Welcome to my **Web Development Portfolio Repository**!  
-This collection highlights a variety of **Full Stack Projects**, crafted with a keen eye for **UI/UX**, modern frameworks, and efficient architecture.
+## 📌 Overview
+
+This is my **personal portfolio website** built using **Next.js**, featuring smooth animations, clean UI/UX, and full responsiveness on all devices.  
+
+The portfolio showcases my skills, projects, experience, and provides an easy way for visitors to contact or connect with me.
+
+The site is **fully static**, optimized for performance, and designed with a modern, minimalistic look.
+
+---
+
+## ✨ Key Features
+
+### 🔹 Modern UI  
+
+- Clean, minimal layout  
+
+- Professional color theme  
+
+- Smooth page transitions  
+
+### 🔹 Animations  
+
+- Framer Motion for subtle motion effects  
+
+- Hover animations  
+
+- Fade / slide / scale transitions  
+
+### 🔹 Fully Responsive  
+
+- Mobile-first approach  
+
+- Optimized for all screen sizes  
+
+- Adaptive grid layout  
+
+### 🔹 Blazing Fast  
+
+- Next.js static optimization  
+
+- Image optimization  
+
+- Edge-ready architecture  
+
+### 🔹 SEO-Friendly  
+
+- Meta tags  
+
+- Clean URL structure  
+
+- Fast load times  
+
+---
+
+## 📁 Tech Stack
+
+- **Next.js**  
+
+- **React**  
+
+- **TailwindCSS**  
+
+- **Framer Motion (Animations)**  
+
+- **TypeScript (optional)**  
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these simple steps to run any of the projects locally:
+### 1️⃣ Install Dependencies
 
-### 1️⃣ Clone the Repository
-git clone https://github.com/MuzamilTeamSeven/VercelPortfolio.git
-
-### 2️⃣ Navigate to a Project
-cd project-name
-
-### 3️⃣ Install Dependencies
 npm install
 
-### 4️⃣ Start the Project
+2️⃣ Run the Development Server
+
+npm run dev
+
+Runs at http://localhost:3000
+
+3️⃣ Build for Production
+
+npm run build
+
 npm start
 
-### 🛠️ Technologies Used
-Each project is powered by a modern tech stack to ensure performance, scalability, and a seamless user experience.
+### 📂 Project Structure
 
-### 🔹 Frontend
-HTML5, CSS3, JavaScript
-React.js
-Tailwind CSS, Bootstrap, SASS
+portfolio/
 
-### 🔹 Backend
-Node.js
-Express.js
-MongoDB
+ ├── components/
+ 
+ ├── pages/
+ 
+ ├── public/
+ 
+ ├── styles/
+ 
+ ├── animations/
+ 
+ ├── package.json
+ 
+ └── next.config.js
 
-### 🔹 Tools & Utilities
-Git & GitHub
-Webpack, REST APIs, GraphQL
-Axios, JWT Authentication
+### 👤 Author
 
-### 🎯 Key Features
-✨ Responsive Design
-Optimized for all devices — mobile, tablet, and desktop.
-
-### 🔍 SEO Optimized
-Clean structure and metadata for better search engine visibility.
-
-### 🔒 Secure Auth
-JWT-based user authentication implemented across projects.
-
-### 🌐 API Integration
-Real-time data fetching using REST & GraphQL.
-
-### 📬 Contact Me
-Let’s connect!
-💬 If you have feedback, questions, or collaboration ideas:
-
-<!-- 📧 Email: malikmuzamil92110@example.com | 💼 LinkedIn: linkedin.com/in/malik-muzamil -->
-
-
-Thanks for visiting! 🚀
-
-Let me know if you want me to generate badges, GIF previews, or a collapsible layout too!
+Muzamil Saleem  
+Full Stack Developer
