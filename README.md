@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Personal Portfolio — Next.js</h1>
+<h1 align="center">🌐 Personal Portfolio Next.js</h1>
 <h3 align="center">Modern • Animated • Responsive • Fast</h3>
 
 <p align="center">
