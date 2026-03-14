@@ -3,13 +3,26 @@
 import * as React from 'react';
 import { useState } from 'react';
 import SingleProject from './single-project';
+import { useEffect } from "react";
 
 function ProjectCard({ project }) {
 
   const [showQuick, setShowQuick] = useState(false);
 
+  useEffect(() => {
+  if (showQuick) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [showQuick]);
+
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
+    <div className="relative z-0 from-[#0d1224] border-[#1b2c68a0] rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
@@ -97,7 +110,7 @@ function ProjectCard({ project }) {
             type="button"
             className="px-4 py-2 rounded-md bg-gradient-to-r from-indigo-600 to-indigo-800 
                  text-white text-sm font-medium transition-transform duration-200 
-                 hover:scale-105 hover:shadow-[0_0_10px_rgba(79,70,229,0.5)]">
+                 hover:scale-105 hover:shadow-[0_0_10px_rgba(79,70,229,0.5)] cursor-pointer">
             Quick Review
           </button>
 
@@ -105,16 +118,16 @@ function ProjectCard({ project }) {
       </div>
       {showQuick && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-60"
+          className="fixed inset-0 z-[999999] flex items-start justify-center bg-[#020617]/95 backdrop-blur-md overflow-y-auto pt-20"
           role="dialog"
           aria-modal="true"
           onClick={() => setShowQuick(false)}
         >
-          <div className="max-w-3xl w-full p-6 relative" onClick={(e) => e.stopPropagation()}>
+          <div className="max-w-4xl w-full my-20 p-6 relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setShowQuick(false)}
               aria-label="Close quick review"
-              className="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#111827] text-white flex items-center justify-center text-2xl shadow-lg"
+              className="absolute cursor-pointer -top-3 -right-3 w-10 h-10 rounded-full bg-[#111827] text-white flex items-center justify-center text-2xl shadow-lg"
             >
               ×
             </button>
